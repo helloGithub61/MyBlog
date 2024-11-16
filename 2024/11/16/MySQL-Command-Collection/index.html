@@ -4,14 +4,19 @@
   <meta charset="utf-8">
   
   
-  <title>Hexo</title>
+  <title>MySQL Command Collection | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="数据库基本操作12345678910mysql -u user -p # 回车后输入密码，启动数据库show databases; # 查看已经存在的数据库create database game; # 创建一个名为game的数据库drop database game; # 删除名为game的数据库use game; # 选择要操作的数据库mysqldump -u root -p game pla">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MySQL Command Collection">
+<meta property="og:url" content="http://example.com/2024/11/16/MySQL-Command-Collection/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="数据库基本操作12345678910mysql -u user -p # 回车后输入密码，启动数据库show databases; # 查看已经存在的数据库create database game; # 创建一个名为game的数据库drop database game; # 删除名为game的数据库use game; # 选择要操作的数据库mysqldump -u root -p game pla">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-11-16T05:59:54.000Z">
+<meta property="article:modified_time" content="2024-11-16T06:19:00.035Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="MySQL">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -67,9 +72,7 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-MySQL-Command-Collection" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-MySQL-Command-Collection" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2024/11/16/MySQL-Command-Collection/" class="article-date">
   <time class="dt-published" datetime="2024-11-16T05:59:54.000Z" itemprop="datePublished">2024-11-16</time>
@@ -82,8 +85,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2024/11/16/MySQL-Command-Collection/">MySQL Command Collection</a>
+    <h1 class="p-name article-title" itemprop="headline name">
+      MySQL Command Collection
     </h1>
   
 
@@ -130,59 +133,19 @@
     </footer>
   </div>
   
-</article>
-
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-Go-Study-day1" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2024/10/27/Go-Study-day1/" class="article-date">
-  <time class="dt-published" datetime="2024-10-27T05:25:22.000Z" itemprop="datePublished">2024-10-27</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2024/10/27/Go-Study-day1/">Go-Study-day1.md</a>
-    </h1>
+    <a href="/2024/10/27/Go-Study-day1/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Go-Study-day1.md</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="Viper"><a href="#Viper" class="headerlink" title="Viper"></a>Viper</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">// 读取config.yaml的内容</span><br><span class="line">var Config = viper.New()</span><br><span class="line"></span><br><span class="line">func init() &#123;</span><br><span class="line">	Config.SetConfigName(&quot;config&quot;)</span><br><span class="line">	Config.SetConfigType(&quot;yaml&quot;)</span><br><span class="line">	Config.WatchConfig()</span><br><span class="line">	Config.AddConfigPath(&quot;./&quot;)</span><br><span class="line">	err := Config.ReadInConfig()</span><br><span class="line">	if err != nil &#123;</span><br><span class="line">		log.Fatal(&quot;Error reading config file, &quot;, err)</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h1 id="Gorm-初始化"><a href="#Gorm-初始化" class="headerlink" title="Gorm-初始化"></a>Gorm-初始化</h1><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> DB *gorm.DB</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">autoMigrate</span><span class="params">(db *gorm.DB)</span></span> <span class="type">error</span> &#123;</span><br><span class="line">	err := db.AutoMigrate(</span><br><span class="line">		&amp;models.User&#123;&#125;,</span><br><span class="line">		&amp;models.Post&#123;&#125;,</span><br><span class="line">		&amp;models.Report&#123;&#125;,</span><br><span class="line">		&amp;models.Email&#123;&#125;,</span><br><span class="line">		&amp;models.Comment&#123;&#125;,</span><br><span class="line">		&amp;models.Block&#123;&#125;,</span><br><span class="line">		&amp;models.Love&#123;&#125;,</span><br><span class="line">	)</span><br><span class="line">	<span class="keyword">return</span> err</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">InitDB</span><span class="params">()</span></span> &#123;</span><br><span class="line">	user := config.Config.GetString(<span class="string">&quot;database.user&quot;</span>)</span><br><span class="line">	pass := config.Config.GetString(<span class="string">&quot;database.password&quot;</span>)</span><br><span class="line">	host := config.Config.GetString(<span class="string">&quot;database.host&quot;</span>)</span><br><span class="line">	port := config.Config.GetString(<span class="string">&quot;database.port&quot;</span>)</span><br><span class="line">	name := config.Config.GetString(<span class="string">&quot;database.DBname&quot;</span>)</span><br><span class="line">	dsn := fmt.Sprintf(<span class="string">&quot;%s:%s@tcp(%s:%s)/%s?charset=utf8mb4&amp;parseTime=True&amp;loc=Local&quot;</span>, user, pass, host, port, name)</span><br><span class="line">	db, err := gorm.Open(mysql.Open(dsn), &amp;gorm.Config&#123;&#125;)</span><br><span class="line">	<span class="keyword">if</span> err != <span class="literal">nil</span> &#123;</span><br><span class="line">		log.Fatal(err)</span><br><span class="line">	&#125;</span><br><span class="line">	autoMigrate(db)</span><br><span class="line">	DB = db</span><br><span class="line">	PostTab = db.Table(<span class="string">&quot;posts&quot;</span>)</span><br><span class="line">	ReportTab = db.Table(<span class="string">&quot;reports&quot;</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h1 id="Gin-router"><a href="#Gin-router" class="headerlink" title="Gin-router"></a>Gin-router</h1><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">Init</span><span class="params">(r *gin.Engine)</span></span> &#123;</span><br><span class="line">	api := r.Group(<span class="string">&quot;/api&quot;</span>)</span><br><span class="line">	per := api.Group(<span class="string">&quot;/user&quot;</span>).Use(middleware.TokenMiddleware) <span class="comment">//使用中间件</span></span><br><span class="line">	ad := api.Group(<span class="string">&quot;/admin&quot;</span>).Use(middleware.TokenMiddleware)</span><br><span class="line">	<span class="comment">// 设置路由</span></span><br><span class="line">	&#123;</span><br><span class="line">		api.POST(<span class="string">&quot;/login&quot;</span>, user.Login_Post)                  <span class="comment">//登录操作</span></span><br><span class="line">		per.GET(<span class="string">&quot;/search&quot;</span>, user.Search)                      <span class="comment">//搜索</span></span><br><span class="line">		ad.POST(<span class="string">&quot;/unlock&quot;</span>, admin.UnlockUser)                 <span class="comment">//解封账号</span></span><br><span class="line">		r.NoRoute(middleware.HandleNotFound)                 <span class="comment">//未注册路由</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2024/10/27/Go-Study-day1/" data-id="cm2r9ba890000hsvqapt0gw2p" data-title="Go-Study-day1.md" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Study-Go-Viper-Gorm-Gin/" rel="tag">Study Go Viper Gorm Gin</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
-
-
-
-  
 
 
 </section>
