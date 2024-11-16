@@ -1,472 +1,281 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
-
-
+  
+  
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Hexo">
-  <meta property="og:url" content="http://example.com/index.html">
-  <meta property="og:site_name" content="Hexo">
-  <meta property="og:locale" content="en_US">
-  <meta property="article:author" content="John Doe">
-  <meta name="twitter:card" content="summary">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="./atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="./favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="./css/style.css">
 
-  <link rel="alternate" href="./atom.xml" title="Hexo" type="application/atom+xml">
+  
+    
+<link rel="stylesheet" href="./fancybox/jquery.fancybox.min.css">
 
-
-  <link rel="shortcut icon" href="./favicon.png">
-
-
-
-  <link rel="stylesheet" href="./css/style.css">
-
-
-
-  <link rel="stylesheet" href="./fancybox/jquery.fancybox.min.css">
-
-
-
-  <meta name="generator" content="Hexo 7.3.0">
-</head>
+  
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
 
 <body>
   <div id="container">
     <div id="wrap">
       <header id="header">
-        <div id="banner"></div>
-        <div id="header-outer" class="outer">
-          <div id="header-title" class="inner">
-            <h1 id="logo-wrap">
-              <a href="/" id="logo">Hexo</a>
-            </h1>
-
-          </div>
-          <div id="header-inner" class="inner">
-            <nav id="main-nav">
-              <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
-
-              <a class="main-nav-link" href="/">Home</a>
-
-              <a class="main-nav-link" href="/archives">Archives</a>
-
-            </nav>
-            <nav id="sub-nav">
-
-
-              <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
-
-              <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
-            </nav>
-            <div id="search-form-wrap">
-              <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input
-                  type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit"
-                  class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch"
-                  value="http://example.com"></form>
-            </div>
-          </div>
-        </div>
-      </header>
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="./" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="./">Home</a>
+        
+          <a class="main-nav-link" href="./archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="./atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
 
       <div class="outer">
         <section id="main">
-
-          <article id="post-MySQL-Command-Collection" class="h-entry article article-type-post" itemprop="blogPost"
-            itemscope itemtype="https://schema.org/BlogPosting">
-            <div class="article-meta">
-              <a href="/2024/11/16/MySQL-Command-Collection/" class="article-date">
-                <time class="dt-published" datetime="2024-11-16T05:59:54.000Z"
-                  itemprop="datePublished">2024-11-16</time>
-              </a>
-
-            </div>
-            <div class="article-inner">
-
-
-              <header class="article-header">
-
-
-                <h1 itemprop="name">
-                  <a class="p-name article-title" href="/2024/11/16/MySQL-Command-Collection/">MySQL Command
-                    Collection</a>
-                </h1>
-
-
-              </header>
-
-              <div class="e-content article-entry" itemprop="articleBody">
-
-                <h2 id="数据库基本操作"><a href="#数据库基本操作" class="headerlink" title="数据库基本操作"></a>数据库基本操作</h2>
-                <figure class="highlight plaintext">
-                  <table>
-                    <tr>
-                      <td class="gutter">
-                        <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre>
-                      </td>
-                      <td class="code">
-                        <pre><span class="line">mysql -u user -p # 回车后输入密码，启动数据库</span><br><span class="line">show databases; # 查看已经存在的数据库</span><br><span class="line">create database game; # 创建一个名为game的数据库</span><br><span class="line">drop database game; # 删除名为game的数据库</span><br><span class="line">use game; # 选择要操作的数据库</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">mysqldump -u root -p game play &gt; game.sql # 导出数据表</span><br><span class="line"># 省略表名称会导出整个数据库，导出文件保存的是一条条sql命令，用来创建数据库</span><br><span class="line">mysql -u root -p game &lt; game.sql # 导入创建数据表</span><br></pre>
-                      </td>
-                    </tr>
-                  </table>
-                </figure>
-
-                <h2 id="数据表基本操作"><a href="#数据表基本操作" class="headerlink" title="数据表基本操作"></a>数据表基本操作</h2>
-                <figure class="highlight plaintext">
-                  <table>
-                    <tr>
-                      <td class="gutter">
-                        <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre>
-                      </td>
-                      <td class="code">
-                        <pre><span class="line">create table player (</span><br><span class="line">	id INT,</span><br><span class="line">	name VARCHER(100),</span><br><span class="line">	level INT,</span><br><span class="line">    exp INT,</span><br><span class="line">    gold DECIMAL(10,2)</span><br><span class="line">); # 创建一个数据表</span><br><span class="line">DROP TABLE player; # 删除数据表</span><br><span class="line">DESC player; # 查看数据表的内容</span><br><span class="line"></span><br><span class="line">ALTER table player MODIFY COLUMN name VARCHAR(200); # 修改数据类型</span><br><span class="line">ALTER table player MODIFY COLUMN LEVEL INT DEFAULT 1; # 设置默认值</span><br><span class="line">ALTER table player RENAME COLUMN name to nick_name; # 修改字段名</span><br><span class="line">ALTER table player ADD COLUMN last_login DATETIME; # 添加一个字段</span><br><span class="line">ALTER table player DROP COLUMN last_login; # 删除一个字段</span><br></pre>
-                      </td>
-                    </tr>
-                  </table>
-                </figure>
-
-                <h2 id="数据的增删改查"><a href="#数据的增删改查" class="headerlink" title="数据的增删改查"></a>数据的增删改查</h2>
-                <figure class="highlight plaintext">
-                  <table>
-                    <tr>
-                      <td class="gutter">
-                        <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre>
-                      </td>
-                      <td class="code">
-                        <pre><span class="line">INSERT INTO player (id, name) VALUES (1, &quot;张三&quot;) ;</span><br><span class="line"># 如果values的内容包含所有关键字，并且与表结构的顺序一致，表名称后面后面可以直接跟VALUES，可以多行添加</span><br><span class="line"></span><br><span class="line">DELETE FROM player where gold=0; # 删除所有gold为0的数据</span><br><span class="line"></span><br><span class="line">UPDATE player set level = 1 where name = &#x27;李四&#x27;; # 更新数据，如果没有where就会把所有数据都修改掉，可以多行修改</span><br><span class="line"></span><br><span class="line">select id from player # 使用字段名查询数据，可以使用*号来查询所有字段</span><br><span class="line"></span><br><span class="line"># where 后面跟条件判断语句，可以用AND或者OR来添加多个条件</span><br><span class="line"></span><br><span class="line">where level IN (1,3,5) # level的值为1或3或5的数据，还可以用BETWEEN...AND...限定范围</span><br><span class="line"></span><br><span class="line">select * from player where name LIKE &quot;%王_&quot; # 使用通配符进行查询，%表示任意数量的字符，_表示任意一个字符</span><br><span class="line"></span><br><span class="line">select * from player where name REGEXP &quot;&quot; # 双引号内填正则表达式</span><br><span class="line"></span><br><span class="line">select * from player where name is null # 查找空值时需要使用 is null</span><br><span class="line"></span><br><span class="line">select * from player ORDER BY level DESC; # 查找数据并按照level降序排列，如果没有，没有DESC或者加上ASC都表示升序，BY后面同样可以跟多个条件</span><br><span class="line"></span><br><span class="line"># 数据表的字段都有对应的数字索引，1表示第一个字段</span><br><span class="line"></span><br><span class="line">select COUNT(*) from player; # 查看数据数量</span><br><span class="line">select AVG(level) from player; # 计算level的平均值</span><br><span class="line"></span><br><span class="line">select sex,COUNT(*) from player group by sex; # 根据sex的值进行分组，并计算数量</span><br><span class="line"></span><br><span class="line">select level,COUNT(level) from player group by level having count(level)&gt;4 order by count(level) DESC; # 筛选出等级大于4的玩家，统计不同等级的玩家数量并按照数量降序排列</span><br><span class="line"></span><br><span class="line"># substr用于截取字符串，SUBSTR(name,1,1)表示从name中从第一个字符开始，截取长度为1的字符串</span><br><span class="line">select SUBSTR(name,1,1),COUNT(SUBSTR(name,1,1))</span><br><span class="line">from player group by SUBSTR(name,1,1) </span><br><span class="line">having count(SUBSTR(name,1,1))&gt;4 </span><br><span class="line">order by count(SUBSTR(name,1,1)) DESC Limit 3,3; # Limit限制返回数量，前面一个3表示偏移量即从第4个数据开始，后面的3表示数量，这里表示输出第4到6名的数据，如果从第1名个开始输出，前面的3不用写</span><br><span class="line"></span><br><span class="line">select DISTINCT sex from player; # 将sex列的数据去重后输出</span><br><span class="line"></span><br><span class="line">SELECT....</span><br><span class="line">UNION</span><br><span class="line">SELECT.... # 合并两个select语句的结果并输出。UNION在合并时会去掉重复的数据，如果不想去重，需使用UNION ALL。UNION可以替换为INTERSECT，取两个结果的交集，或者替换为EXCEPT，取两个结果的差集</span><br></pre>
-                      </td>
-                    </tr>
-                  </table>
-                </figure>
-
-                <h2 id="子查询：使用一个查询的结果作为另一个查询的条件"><a href="#子查询：使用一个查询的结果作为另一个查询的条件" class="headerlink"
-                    title="子查询：使用一个查询的结果作为另一个查询的条件"></a>子查询：使用一个查询的结果作为另一个查询的条件</h2>
-                <figure class="highlight plaintext">
-                  <table>
-                    <tr>
-                      <td class="gutter">
-                        <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre>
-                      </td>
-                      <td class="code">
-                        <pre><span class="line">select AVG(level) from player; # 查询平均等级</span><br><span class="line">sleect * from player where level &gt; (select AVG(level) from player); # 查询等级大于平均等级的玩家</span><br><span class="line">sleect level,</span><br><span class="line">ROUND(select AVG(level) from player) as average</span><br><span class="line">from player; # ROUND可以将浮点数四舍五入成整数，使用as可以设置列的名称，如果不设置就会显示ROUND(select AVG(level) from player)</span><br><span class="line">create table new_player select * from player where level &lt; 5 # 利用子查询创建新的数据表</span><br><span class="line">select exists(子查询语句) # 判断是否存在符合条件的语句，返回值只有0和1</span><br></pre>
-                      </td>
-                    </tr>
-                  </table>
-                </figure>
-
-                <h2 id="表关联：用来查询多个表中的数据"><a href="#表关联：用来查询多个表中的数据" class="headerlink"
-                    title="表关联：用来查询多个表中的数据"></a>表关联：用来查询多个表中的数据</h2>
-                <blockquote>
-                  <p>关联的表之间必须有相同的字段，一般会使用表的主键和外键来关联</p>
-                </blockquote>
-                <h5 id="内连接：只返回两个表中都有的数据"><a href="#内连接：只返回两个表中都有的数据" class="headerlink"
-                    title="内连接：只返回两个表中都有的数据"></a>内连接：只返回两个表中都有的数据</h5>
-                <figure class="highlight plaintext">
-                  <table>
-                    <tr>
-                      <td class="gutter">
-                        <pre><span class="line">1</span><br></pre>
-                      </td>
-                      <td class="code">
-                        <pre><span class="line">INNER JOIN</span><br></pre>
-                      </td>
-                    </tr>
-                  </table>
-                </figure>
-
-                <h5 id="左连接：返回左表中所有的数据和右表中匹配的数据"><a href="#左连接：返回左表中所有的数据和右表中匹配的数据" class="headerlink"
-                    title="左连接：返回左表中所有的数据和右表中匹配的数据"></a>左连接：返回左表中所有的数据和右表中匹配的数据</h5>
-                <figure class="highlight plaintext">
-                  <table>
-                    <tr>
-                      <td class="gutter">
-                        <pre><span class="line">1</span><br></pre>
-                      </td>
-                      <td class="code">
-                        <pre><span class="line">LEFT JOIN</span><br></pre>
-                      </td>
-                    </tr>
-                  </table>
-                </figure>
-
-                <h5 id="右连接：返回右表中所有的数据和左表中匹配的数据"><a href="#右连接：返回右表中所有的数据和左表中匹配的数据" class="headerlink"
-                    title="右连接：返回右表中所有的数据和左表中匹配的数据"></a>右连接：返回右表中所有的数据和左表中匹配的数据</h5>
-                <figure class="highlight plaintext">
-                  <table>
-                    <tr>
-                      <td class="gutter">
-                        <pre><span class="line">1</span><br></pre>
-                      </td>
-                      <td class="code">
-                        <pre><span class="line">RIGHT JOIN</span><br></pre>
-                      </td>
-                    </tr>
-                  </table>
-                </figure>
-
-                <p>现在有个数据表 equip，包含 id name player_id 三个字段</p>
-                <figure class="highlight plaintext">
-                  <table>
-                    <tr>
-                      <td class="gutter">
-                        <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre>
-                      </td>
-                      <td class="code">
-                        <pre><span class="line">select * from player</span><br><span class="line">inner join equip</span><br><span class="line">on plyaer.id=equip.player_id; </span><br><span class="line"></span><br><span class="line">select * from player p, equip e</span><br><span class="line">where p.id=e.player_id; # 简化的写法 p和e是player/equip 的别名</span><br></pre>
-                      </td>
-                    </tr>
-                  </table>
-                </figure>
-
-                <p>在进行表关联查询的时候如果条件有问题就会产生笛卡尔积，将第一个表的所有数据和另外一个表的所有数据进行组合</p>
-                <h2 id="索引：用于数据量大的情况下加快查询速度"><a href="#索引：用于数据量大的情况下加快查询速度" class="headerlink"
-                    title="索引：用于数据量大的情况下加快查询速度"></a>索引：用于数据量大的情况下加快查询速度</h2>
-                <p>一般会在经常需要被查询的字段或者主键上创建索引</p>
-                <figure class="highlight plaintext">
-                  <table>
-                    <tr>
-                      <td class="gutter">
-                        <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre>
-                      </td>
-                      <td class="code">
-                        <pre><span class="line"># 创建数据表的两种方式，创建索引需要一点时间</span><br><span class="line">create index email_index on fast(email)</span><br><span class="line">alter table fast add index name_index (name)</span><br><span class="line"># 显示数据表的所有索引</span><br><span class="line">show index from fast</span><br><span class="line"># 用 slow 和 fast 两张数据表比较索引的增速效果</span><br><span class="line">select * from slow where email like abcd$ ORDER BY id</span><br><span class="line">select * from fast where email like abcd$ ORDER BY id</span><br></pre>
-                      </td>
-                    </tr>
-                  </table>
-                </figure>
-
-                <h2 id="视图：虚拟存在的表"><a href="#视图：虚拟存在的表" class="headerlink" title="视图：虚拟存在的表"></a>视图：虚拟存在的表</h2>
-                <p>视图本身不包含数据，而是作为一个&#x3D;&#x3D;查询语句&#x3D;&#x3D;保存在数据字典当中。当我们查询视图的时候，它会根据语句的定义来动态地生成数据。</p>
-                <figure class="highlight plaintext">
-                  <table>
-                    <tr>
-                      <td class="gutter">
-                        <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre>
-                      </td>
-                      <td class="code">
-                        <pre><span class="line"># 创建视图，记录等级前十的玩家</span><br><span class="line">CREATE VIEW top1o</span><br><span class="line">AS</span><br><span class="line">select * from player order by level desc limit 10;</span><br><span class="line"># 修改视图</span><br><span class="line">alter view top10</span><br><span class="line">as</span><br><span class="line">select * from player order by level asc limit 10;</span><br><span class="line"># 删除视图</span><br><span class="line">drop view top10</span><br></pre>
-                      </td>
-                    </tr>
-                  </table>
-                </figure>
-
-
-              </div>
-              <footer class="article-footer">
-                <a data-url="http://example.com/2024/11/16/MySQL-Command-Collection/"
-                  data-id="cm3jt6l6m0001bovq3h3r4la0" data-title="MySQL Command Collection"
-                  class="article-share-link"><span class="fa fa-share">Share</span></a>
-
-
-
-                <ul class="article-tag-list" itemprop="keywords">
-                  <li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MySQL/"
-                      rel="tag">MySQL</a></li>
-                </ul>
-
-              </footer>
-            </div>
-
-          </article>
-
-
-
-
-          <article id="post-Go-Study-day1" class="h-entry article article-type-post" itemprop="blogPost" itemscope
-            itemtype="https://schema.org/BlogPosting">
-            <div class="article-meta">
-              <a href="/2024/10/27/Go-Study-day1/" class="article-date">
-                <time class="dt-published" datetime="2024-10-27T05:25:22.000Z"
-                  itemprop="datePublished">2024-10-27</time>
-              </a>
-
-            </div>
-            <div class="article-inner">
-
-
-              <header class="article-header">
-
-
-                <h1 itemprop="name">
-                  <a class="p-name article-title" href="/2024/10/27/Go-Study-day1/">Go-Study-day1.md</a>
-                </h1>
-
-
-              </header>
-
-              <div class="e-content article-entry" itemprop="articleBody">
-
-                <h1 id="Viper"><a href="#Viper" class="headerlink" title="Viper"></a>Viper</h1>
-                <figure class="highlight plaintext">
-                  <table>
-                    <tr>
-                      <td class="gutter">
-                        <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre>
-                      </td>
-                      <td class="code">
-                        <pre><span class="line">// 读取config.yaml的内容</span><br><span class="line">var Config = viper.New()</span><br><span class="line"></span><br><span class="line">func init() &#123;</span><br><span class="line">	Config.SetConfigName(&quot;config&quot;)</span><br><span class="line">	Config.SetConfigType(&quot;yaml&quot;)</span><br><span class="line">	Config.WatchConfig()</span><br><span class="line">	Config.AddConfigPath(&quot;./&quot;)</span><br><span class="line">	err := Config.ReadInConfig()</span><br><span class="line">	if err != nil &#123;</span><br><span class="line">		log.Fatal(&quot;Error reading config file, &quot;, err)</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre>
-                      </td>
-                    </tr>
-                  </table>
-                </figure>
-
-
-
-                <h1 id="Gorm-初始化"><a href="#Gorm-初始化" class="headerlink" title="Gorm-初始化"></a>Gorm-初始化</h1>
-                <figure class="highlight go">
-                  <table>
-                    <tr>
-                      <td class="gutter">
-                        <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre>
-                      </td>
-                      <td class="code">
-                        <pre><span class="line"><span class="keyword">var</span> DB *gorm.DB</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">autoMigrate</span><span class="params">(db *gorm.DB)</span></span> <span class="type">error</span> &#123;</span><br><span class="line">	err := db.AutoMigrate(</span><br><span class="line">		&amp;models.User&#123;&#125;,</span><br><span class="line">		&amp;models.Post&#123;&#125;,</span><br><span class="line">		&amp;models.Report&#123;&#125;,</span><br><span class="line">		&amp;models.Email&#123;&#125;,</span><br><span class="line">		&amp;models.Comment&#123;&#125;,</span><br><span class="line">		&amp;models.Block&#123;&#125;,</span><br><span class="line">		&amp;models.Love&#123;&#125;,</span><br><span class="line">	)</span><br><span class="line">	<span class="keyword">return</span> err</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">InitDB</span><span class="params">()</span></span> &#123;</span><br><span class="line">	user := config.Config.GetString(<span class="string">&quot;database.user&quot;</span>)</span><br><span class="line">	pass := config.Config.GetString(<span class="string">&quot;database.password&quot;</span>)</span><br><span class="line">	host := config.Config.GetString(<span class="string">&quot;database.host&quot;</span>)</span><br><span class="line">	port := config.Config.GetString(<span class="string">&quot;database.port&quot;</span>)</span><br><span class="line">	name := config.Config.GetString(<span class="string">&quot;database.DBname&quot;</span>)</span><br><span class="line">	dsn := fmt.Sprintf(<span class="string">&quot;%s:%s@tcp(%s:%s)/%s?charset=utf8mb4&amp;parseTime=True&amp;loc=Local&quot;</span>, user, pass, host, port, name)</span><br><span class="line">	db, err := gorm.Open(mysql.Open(dsn), &amp;gorm.Config&#123;&#125;)</span><br><span class="line">	<span class="keyword">if</span> err != <span class="literal">nil</span> &#123;</span><br><span class="line">		log.Fatal(err)</span><br><span class="line">	&#125;</span><br><span class="line">	autoMigrate(db)</span><br><span class="line">	DB = db</span><br><span class="line">	PostTab = db.Table(<span class="string">&quot;posts&quot;</span>)</span><br><span class="line">	ReportTab = db.Table(<span class="string">&quot;reports&quot;</span>)</span><br><span class="line">&#125;</span><br></pre>
-                      </td>
-                    </tr>
-                  </table>
-                </figure>
-
-                <h1 id="Gin-router"><a href="#Gin-router" class="headerlink" title="Gin-router"></a>Gin-router</h1>
-                <figure class="highlight go">
-                  <table>
-                    <tr>
-                      <td class="gutter">
-                        <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre>
-                      </td>
-                      <td class="code">
-                        <pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">Init</span><span class="params">(r *gin.Engine)</span></span> &#123;</span><br><span class="line">	api := r.Group(<span class="string">&quot;/api&quot;</span>)</span><br><span class="line">	per := api.Group(<span class="string">&quot;/user&quot;</span>).Use(middleware.TokenMiddleware) <span class="comment">//使用中间件</span></span><br><span class="line">	ad := api.Group(<span class="string">&quot;/admin&quot;</span>).Use(middleware.TokenMiddleware)</span><br><span class="line">	<span class="comment">// 设置路由</span></span><br><span class="line">	&#123;</span><br><span class="line">		api.POST(<span class="string">&quot;/login&quot;</span>, user.Login_Post)                  <span class="comment">//登录操作</span></span><br><span class="line">		per.GET(<span class="string">&quot;/search&quot;</span>, user.Search)                      <span class="comment">//搜索</span></span><br><span class="line">		ad.POST(<span class="string">&quot;/unlock&quot;</span>, admin.UnlockUser)                 <span class="comment">//解封账号</span></span><br><span class="line">		r.NoRoute(middleware.HandleNotFound)                 <span class="comment">//未注册路由</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre>
-                      </td>
-                    </tr>
-                  </table>
-                </figure>
-
-
-
-              </div>
-              <footer class="article-footer">
-                <a data-url="http://example.com/2024/10/27/Go-Study-day1/" data-id="cm3jt6l6j0000bovqbf981s2l"
-                  data-title="Go-Study-day1.md" class="article-share-link"><span class="fa fa-share">Share</span></a>
-
-
-
-                <ul class="article-tag-list" itemprop="keywords">
-                  <li class="article-tag-list-item"><a class="article-tag-list-link"
-                      href="/tags/Study-Go-Viper-Gorm-Gin/" rel="tag">Study Go Viper Gorm Gin</a></li>
-                </ul>
-
-              </footer>
-            </div>
-
-          </article>
-
-
-
-
-
-
-        </section>
-
-        <aside id="sidebar">
-
-
-
-
-
-          <div class="widget-wrap">
-            <h3 class="widget-title">Tags</h3>
-            <div class="widget">
-              <ul class="tag-list" itemprop="keywords">
-                <li class="tag-list-item"><a class="tag-list-link" href="/tags/MySQL/" rel="tag">MySQL</a></li>
-                <li class="tag-list-item"><a class="tag-list-link" href="/tags/Study-Go-Viper-Gorm-Gin/" rel="tag">Study
-                    Go Viper Gorm Gin</a></li>
-              </ul>
-            </div>
-          </div>
-
-
-
-
-          <div class="widget-wrap">
-            <h3 class="widget-title">Tag Cloud</h3>
-            <div class="widget tagcloud">
-              <a href="/tags/MySQL/" style="font-size: 10px;">MySQL</a> <a href="/tags/Study-Go-Viper-Gorm-Gin/"
-                style="font-size: 10px;">Study Go Viper Gorm Gin</a>
-            </div>
-          </div>
-
-
-
-          <div class="widget-wrap">
-            <h3 class="widget-title">Archives</h3>
-            <div class="widget">
-              <ul class="archive-list">
-                <li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/11/">November 2024</a>
-                </li>
-                <li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/10/">October 2024</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-
-
-
-          <div class="widget-wrap">
-            <h3 class="widget-title">Recent Posts</h3>
-            <div class="widget">
-              <ul>
-
-                <li>
-                  <a href="/2024/11/16/MySQL-Command-Collection/">MySQL Command Collection</a>
-                </li>
-
-                <li>
-                  <a href="/2024/10/27/Go-Study-day1/">Go-Study-day1.md</a>
-                </li>
-
-              </ul>
-            </div>
-          </div>
-
-
-        </aside>
-
+  
+    <article id="post-MySQL-Command-Collection" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="./2024/11/16/MySQL-Command-Collection/" class="article-date">
+  <time class="dt-published" datetime="2024-11-16T05:59:54.000Z" itemprop="datePublished">2024-11-16</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="./2024/11/16/MySQL-Command-Collection/">MySQL Command Collection</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="数据库基本操作"><a href="#数据库基本操作" class="headerlink" title="数据库基本操作"></a>数据库基本操作</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">mysql -u user -p # 回车后输入密码，启动数据库</span><br><span class="line">show databases; # 查看已经存在的数据库</span><br><span class="line">create database game; # 创建一个名为game的数据库</span><br><span class="line">drop database game; # 删除名为game的数据库</span><br><span class="line">use game; # 选择要操作的数据库</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">mysqldump -u root -p game play &gt; game.sql # 导出数据表</span><br><span class="line"># 省略表名称会导出整个数据库，导出文件保存的是一条条sql命令，用来创建数据库</span><br><span class="line">mysql -u root -p game &lt; game.sql # 导入创建数据表</span><br></pre></td></tr></table></figure>
+
+<h2 id="数据表基本操作"><a href="#数据表基本操作" class="headerlink" title="数据表基本操作"></a>数据表基本操作</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">create table player (</span><br><span class="line">	id INT,</span><br><span class="line">	name VARCHER(100),</span><br><span class="line">	level INT,</span><br><span class="line">    exp INT,</span><br><span class="line">    gold DECIMAL(10,2)</span><br><span class="line">); # 创建一个数据表</span><br><span class="line">DROP TABLE player; # 删除数据表</span><br><span class="line">DESC player; # 查看数据表的内容</span><br><span class="line"></span><br><span class="line">ALTER table player MODIFY COLUMN name VARCHAR(200); # 修改数据类型</span><br><span class="line">ALTER table player MODIFY COLUMN LEVEL INT DEFAULT 1; # 设置默认值</span><br><span class="line">ALTER table player RENAME COLUMN name to nick_name; # 修改字段名</span><br><span class="line">ALTER table player ADD COLUMN last_login DATETIME; # 添加一个字段</span><br><span class="line">ALTER table player DROP COLUMN last_login; # 删除一个字段</span><br></pre></td></tr></table></figure>
+
+<h2 id="数据的增删改查"><a href="#数据的增删改查" class="headerlink" title="数据的增删改查"></a>数据的增删改查</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">INSERT INTO player (id, name) VALUES (1, &quot;张三&quot;) ;</span><br><span class="line"># 如果values的内容包含所有关键字，并且与表结构的顺序一致，表名称后面后面可以直接跟VALUES，可以多行添加</span><br><span class="line"></span><br><span class="line">DELETE FROM player where gold=0; # 删除所有gold为0的数据</span><br><span class="line"></span><br><span class="line">UPDATE player set level = 1 where name = &#x27;李四&#x27;; # 更新数据，如果没有where就会把所有数据都修改掉，可以多行修改</span><br><span class="line"></span><br><span class="line">select id from player # 使用字段名查询数据，可以使用*号来查询所有字段</span><br><span class="line"></span><br><span class="line"># where 后面跟条件判断语句，可以用AND或者OR来添加多个条件</span><br><span class="line"></span><br><span class="line">where level IN (1,3,5) # level的值为1或3或5的数据，还可以用BETWEEN...AND...限定范围</span><br><span class="line"></span><br><span class="line">select * from player where name LIKE &quot;%王_&quot; # 使用通配符进行查询，%表示任意数量的字符，_表示任意一个字符</span><br><span class="line"></span><br><span class="line">select * from player where name REGEXP &quot;&quot; # 双引号内填正则表达式</span><br><span class="line"></span><br><span class="line">select * from player where name is null # 查找空值时需要使用 is null</span><br><span class="line"></span><br><span class="line">select * from player ORDER BY level DESC; # 查找数据并按照level降序排列，如果没有，没有DESC或者加上ASC都表示升序，BY后面同样可以跟多个条件</span><br><span class="line"></span><br><span class="line"># 数据表的字段都有对应的数字索引，1表示第一个字段</span><br><span class="line"></span><br><span class="line">select COUNT(*) from player; # 查看数据数量</span><br><span class="line">select AVG(level) from player; # 计算level的平均值</span><br><span class="line"></span><br><span class="line">select sex,COUNT(*) from player group by sex; # 根据sex的值进行分组，并计算数量</span><br><span class="line"></span><br><span class="line">select level,COUNT(level) from player group by level having count(level)&gt;4 order by count(level) DESC; # 筛选出等级大于4的玩家，统计不同等级的玩家数量并按照数量降序排列</span><br><span class="line"></span><br><span class="line"># substr用于截取字符串，SUBSTR(name,1,1)表示从name中从第一个字符开始，截取长度为1的字符串</span><br><span class="line">select SUBSTR(name,1,1),COUNT(SUBSTR(name,1,1))</span><br><span class="line">from player group by SUBSTR(name,1,1) </span><br><span class="line">having count(SUBSTR(name,1,1))&gt;4 </span><br><span class="line">order by count(SUBSTR(name,1,1)) DESC Limit 3,3; # Limit限制返回数量，前面一个3表示偏移量即从第4个数据开始，后面的3表示数量，这里表示输出第4到6名的数据，如果从第1名个开始输出，前面的3不用写</span><br><span class="line"></span><br><span class="line">select DISTINCT sex from player; # 将sex列的数据去重后输出</span><br><span class="line"></span><br><span class="line">SELECT....</span><br><span class="line">UNION</span><br><span class="line">SELECT.... # 合并两个select语句的结果并输出。UNION在合并时会去掉重复的数据，如果不想去重，需使用UNION ALL。UNION可以替换为INTERSECT，取两个结果的交集，或者替换为EXCEPT，取两个结果的差集</span><br></pre></td></tr></table></figure>
+
+<h2 id="子查询：使用一个查询的结果作为另一个查询的条件"><a href="#子查询：使用一个查询的结果作为另一个查询的条件" class="headerlink" title="子查询：使用一个查询的结果作为另一个查询的条件"></a>子查询：使用一个查询的结果作为另一个查询的条件</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">select AVG(level) from player; # 查询平均等级</span><br><span class="line">sleect * from player where level &gt; (select AVG(level) from player); # 查询等级大于平均等级的玩家</span><br><span class="line">sleect level,</span><br><span class="line">ROUND(select AVG(level) from player) as average</span><br><span class="line">from player; # ROUND可以将浮点数四舍五入成整数，使用as可以设置列的名称，如果不设置就会显示ROUND(select AVG(level) from player)</span><br><span class="line">create table new_player select * from player where level &lt; 5 # 利用子查询创建新的数据表</span><br><span class="line">select exists(子查询语句) # 判断是否存在符合条件的语句，返回值只有0和1</span><br></pre></td></tr></table></figure>
+
+<h2 id="表关联：用来查询多个表中的数据"><a href="#表关联：用来查询多个表中的数据" class="headerlink" title="表关联：用来查询多个表中的数据"></a>表关联：用来查询多个表中的数据</h2><blockquote>
+<p>关联的表之间必须有相同的字段，一般会使用表的主键和外键来关联</p>
+</blockquote>
+<h5 id="内连接：只返回两个表中都有的数据"><a href="#内连接：只返回两个表中都有的数据" class="headerlink" title="内连接：只返回两个表中都有的数据"></a>内连接：只返回两个表中都有的数据</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">INNER JOIN</span><br></pre></td></tr></table></figure>
+
+<h5 id="左连接：返回左表中所有的数据和右表中匹配的数据"><a href="#左连接：返回左表中所有的数据和右表中匹配的数据" class="headerlink" title="左连接：返回左表中所有的数据和右表中匹配的数据"></a>左连接：返回左表中所有的数据和右表中匹配的数据</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LEFT JOIN</span><br></pre></td></tr></table></figure>
+
+<h5 id="右连接：返回右表中所有的数据和左表中匹配的数据"><a href="#右连接：返回右表中所有的数据和左表中匹配的数据" class="headerlink" title="右连接：返回右表中所有的数据和左表中匹配的数据"></a>右连接：返回右表中所有的数据和左表中匹配的数据</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">RIGHT JOIN</span><br></pre></td></tr></table></figure>
+
+<p>现在有个数据表 equip，包含 id name player_id 三个字段</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">select * from player</span><br><span class="line">inner join equip</span><br><span class="line">on plyaer.id=equip.player_id; </span><br><span class="line"></span><br><span class="line">select * from player p, equip e</span><br><span class="line">where p.id=e.player_id; # 简化的写法 p和e是player/equip 的别名</span><br></pre></td></tr></table></figure>
+
+<p>在进行表关联查询的时候如果条件有问题就会产生笛卡尔积，将第一个表的所有数据和另外一个表的所有数据进行组合</p>
+<h2 id="索引：用于数据量大的情况下加快查询速度"><a href="#索引：用于数据量大的情况下加快查询速度" class="headerlink" title="索引：用于数据量大的情况下加快查询速度"></a>索引：用于数据量大的情况下加快查询速度</h2><p>一般会在经常需要被查询的字段或者主键上创建索引</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># 创建数据表的两种方式，创建索引需要一点时间</span><br><span class="line">create index email_index on fast(email)</span><br><span class="line">alter table fast add index name_index (name)</span><br><span class="line"># 显示数据表的所有索引</span><br><span class="line">show index from fast</span><br><span class="line"># 用 slow 和 fast 两张数据表比较索引的增速效果</span><br><span class="line">select * from slow where email like abcd$ ORDER BY id</span><br><span class="line">select * from fast where email like abcd$ ORDER BY id</span><br></pre></td></tr></table></figure>
+
+<h2 id="视图：虚拟存在的表"><a href="#视图：虚拟存在的表" class="headerlink" title="视图：虚拟存在的表"></a>视图：虚拟存在的表</h2><p>视图本身不包含数据，而是作为一个&#x3D;&#x3D;查询语句&#x3D;&#x3D;保存在数据字典当中。当我们查询视图的时候，它会根据语句的定义来动态地生成数据。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"># 创建视图，记录等级前十的玩家</span><br><span class="line">CREATE VIEW top1o</span><br><span class="line">AS</span><br><span class="line">select * from player order by level desc limit 10;</span><br><span class="line"># 修改视图</span><br><span class="line">alter view top10</span><br><span class="line">as</span><br><span class="line">select * from player order by level asc limit 10;</span><br><span class="line"># 删除视图</span><br><span class="line">drop view top10</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2024/11/16/MySQL-Command-Collection/" data-id="cm3jtskt10000ocvqhj9k2nyk" data-title="MySQL Command Collection" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="./tags/MySQL/" rel="tag">MySQL</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-Go-Study-day1" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="./2024/10/27/Go-Study-day1/" class="article-date">
+  <time class="dt-published" datetime="2024-10-27T05:25:22.000Z" itemprop="datePublished">2024-10-27</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="./2024/10/27/Go-Study-day1/">Go-Study-day1.md</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="Viper"><a href="#Viper" class="headerlink" title="Viper"></a>Viper</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">// 读取config.yaml的内容</span><br><span class="line">var Config = viper.New()</span><br><span class="line"></span><br><span class="line">func init() &#123;</span><br><span class="line">	Config.SetConfigName(&quot;config&quot;)</span><br><span class="line">	Config.SetConfigType(&quot;yaml&quot;)</span><br><span class="line">	Config.WatchConfig()</span><br><span class="line">	Config.AddConfigPath(&quot;./&quot;)</span><br><span class="line">	err := Config.ReadInConfig()</span><br><span class="line">	if err != nil &#123;</span><br><span class="line">		log.Fatal(&quot;Error reading config file, &quot;, err)</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="Gorm-初始化"><a href="#Gorm-初始化" class="headerlink" title="Gorm-初始化"></a>Gorm-初始化</h1><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> DB *gorm.DB</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">autoMigrate</span><span class="params">(db *gorm.DB)</span></span> <span class="type">error</span> &#123;</span><br><span class="line">	err := db.AutoMigrate(</span><br><span class="line">		&amp;models.User&#123;&#125;,</span><br><span class="line">		&amp;models.Post&#123;&#125;,</span><br><span class="line">		&amp;models.Report&#123;&#125;,</span><br><span class="line">		&amp;models.Email&#123;&#125;,</span><br><span class="line">		&amp;models.Comment&#123;&#125;,</span><br><span class="line">		&amp;models.Block&#123;&#125;,</span><br><span class="line">		&amp;models.Love&#123;&#125;,</span><br><span class="line">	)</span><br><span class="line">	<span class="keyword">return</span> err</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">InitDB</span><span class="params">()</span></span> &#123;</span><br><span class="line">	user := config.Config.GetString(<span class="string">&quot;database.user&quot;</span>)</span><br><span class="line">	pass := config.Config.GetString(<span class="string">&quot;database.password&quot;</span>)</span><br><span class="line">	host := config.Config.GetString(<span class="string">&quot;database.host&quot;</span>)</span><br><span class="line">	port := config.Config.GetString(<span class="string">&quot;database.port&quot;</span>)</span><br><span class="line">	name := config.Config.GetString(<span class="string">&quot;database.DBname&quot;</span>)</span><br><span class="line">	dsn := fmt.Sprintf(<span class="string">&quot;%s:%s@tcp(%s:%s)/%s?charset=utf8mb4&amp;parseTime=True&amp;loc=Local&quot;</span>, user, pass, host, port, name)</span><br><span class="line">	db, err := gorm.Open(mysql.Open(dsn), &amp;gorm.Config&#123;&#125;)</span><br><span class="line">	<span class="keyword">if</span> err != <span class="literal">nil</span> &#123;</span><br><span class="line">		log.Fatal(err)</span><br><span class="line">	&#125;</span><br><span class="line">	autoMigrate(db)</span><br><span class="line">	DB = db</span><br><span class="line">	PostTab = db.Table(<span class="string">&quot;posts&quot;</span>)</span><br><span class="line">	ReportTab = db.Table(<span class="string">&quot;reports&quot;</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="Gin-router"><a href="#Gin-router" class="headerlink" title="Gin-router"></a>Gin-router</h1><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">Init</span><span class="params">(r *gin.Engine)</span></span> &#123;</span><br><span class="line">	api := r.Group(<span class="string">&quot;/api&quot;</span>)</span><br><span class="line">	per := api.Group(<span class="string">&quot;/user&quot;</span>).Use(middleware.TokenMiddleware) <span class="comment">//使用中间件</span></span><br><span class="line">	ad := api.Group(<span class="string">&quot;/admin&quot;</span>).Use(middleware.TokenMiddleware)</span><br><span class="line">	<span class="comment">// 设置路由</span></span><br><span class="line">	&#123;</span><br><span class="line">		api.POST(<span class="string">&quot;/login&quot;</span>, user.Login_Post)                  <span class="comment">//登录操作</span></span><br><span class="line">		per.GET(<span class="string">&quot;/search&quot;</span>, user.Search)                      <span class="comment">//搜索</span></span><br><span class="line">		ad.POST(<span class="string">&quot;/unlock&quot;</span>, admin.UnlockUser)                 <span class="comment">//解封账号</span></span><br><span class="line">		r.NoRoute(middleware.HandleNotFound)                 <span class="comment">//未注册路由</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2024/10/27/Go-Study-day1/" data-id="cm3jtskt50001ocvqb0n84b4c" data-title="Go-Study-day1.md" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="./tags/Study-Go-Viper-Gorm-Gin/" rel="tag">Study Go Viper Gorm Gin</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="./tags/MySQL/" rel="tag">MySQL</a></li><li class="tag-list-item"><a class="tag-list-link" href="./tags/Study-Go-Viper-Gorm-Gin/" rel="tag">Study Go Viper Gorm Gin</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="./tags/MySQL/" style="font-size: 10px;">MySQL</a> <a href="./tags/Study-Go-Viper-Gorm-Gin/" style="font-size: 10px;">Study Go Viper Gorm Gin</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="./archives/2024/11/">November 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="./archives/2024/10/">October 2024</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="./2024/11/16/MySQL-Command-Collection/">MySQL Command Collection</a>
+          </li>
+        
+          <li>
+            <a href="./2024/10/27/Go-Study-day1/">Go-Study-day1.md</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
       </div>
       <footer id="footer">
-
-        <div class="outer">
-          <div id="footer-info" class="inner">
-
-            &copy; 2024 John Doe<br>
-            Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-          </div>
-        </div>
-      </footer>
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2024 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
 
     </div>
     <nav id="mobile-nav">
-
-      <a href="/" class="mobile-nav-link">Home</a>
-
-      <a href="/archives" class="mobile-nav-link">Archives</a>
-
-    </nav>
-
-
-
-    <script src="/js/jquery-3.6.4.min.js"></script>
+  
+    <a href="./" class="mobile-nav-link">Home</a>
+  
+    <a href="./archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
 
 
-
-
-    <script src="/fancybox/jquery.fancybox.min.js"></script>
+<script src="/js/jquery-3.6.4.min.js"></script>
 
 
 
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
 
-    <script src="/js/script.js"></script>
+
+
+
+<script src="/js/script.js"></script>
 
 
 
@@ -474,5 +283,4 @@
 
   </div>
 </body>
-
 </html>
